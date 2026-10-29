@@ -204,6 +204,38 @@ body.project-focus{overflow:hidden}.focus-back{position:sticky;top:0;z-index:4;m
 :root[data-theme="dark"] details.case:first-of-type .flow-branches>div{background:#29364a!important;color:#f4f7ff!important}
 :root[data-theme="dark"] details.case:first-of-type .flow-outcomes span{background:#29435b!important;color:#f1f8ff!important}
 </style>
+
+<style id="callback-darkmode-force-fix">
+/* Force dark-mode contrast for Start callback confirmation artefact. */
+@media (prefers-color-scheme: dark){
+ html:not([data-theme="light"]) .callback-native{background:#211b38!important;background-image:none!important;border-color:#5d527d!important;color:#f7f4ff!important;box-shadow:0 12px 34px rgba(0,0,0,.28)!important}
+ html:not([data-theme="light"]) .callback-native .cn-start{background:#2d493c!important;color:#ffffff!important;border-color:#719983!important}
+ html:not([data-theme="light"]) .callback-native .cn-decision{background:#4a3e1f!important;color:#ffffff!important;border-color:#c3a448!important}
+ html:not([data-theme="light"]) .callback-native .cn-node,html:not([data-theme="light"]) .callback-native .cn-process{background:#2a2444!important;color:#ffffff!important;border-color:#8d82b4!important}
+ html:not([data-theme="light"]) .callback-native .cn-branch{background:#29364a!important;color:#ffffff!important;border-color:#5e7190!important}
+ html:not([data-theme="light"]) .callback-native .cn-branch>strong{color:#ffffff!important}
+ html:not([data-theme="light"]) .callback-native .cn-note{color:#d8d1ee!important}
+ html:not([data-theme="light"]) .callback-native .cn-inputs span{background:#3b315f!important;color:#ffffff!important}
+ html:not([data-theme="light"]) .callback-native .cn-success{background:#28503d!important;color:#ffffff!important;border-color:#65a083!important}
+ html:not([data-theme="light"]) .callback-native .cn-warning{background:#51401f!important;color:#ffffff!important;border-color:#b08b39!important}
+ html:not([data-theme="light"]) .callback-native .cn-transfer{background:#552d37!important;color:#ffffff!important;border-color:#b76678!important}
+ html:not([data-theme="light"]) .callback-native .cn-arrow{color:#cabdff!important}
+ html:not([data-theme="light"]) .callback-native-figure figcaption{color:#d8d1ee!important}
+}
+html[data-theme="dark"] .callback-native{background:#211b38!important;background-image:none!important;border-color:#5d527d!important;color:#f7f4ff!important;box-shadow:0 12px 34px rgba(0,0,0,.28)!important}
+html[data-theme="dark"] .callback-native .cn-start{background:#2d493c!important;color:#ffffff!important;border-color:#719983!important}
+html[data-theme="dark"] .callback-native .cn-decision{background:#4a3e1f!important;color:#ffffff!important;border-color:#c3a448!important}
+html[data-theme="dark"] .callback-native .cn-node,html[data-theme="dark"] .callback-native .cn-process{background:#2a2444!important;color:#ffffff!important;border-color:#8d82b4!important}
+html[data-theme="dark"] .callback-native .cn-branch{background:#29364a!important;color:#ffffff!important;border-color:#5e7190!important}
+html[data-theme="dark"] .callback-native .cn-branch>strong{color:#ffffff!important}
+html[data-theme="dark"] .callback-native .cn-note{color:#d8d1ee!important}
+html[data-theme="dark"] .callback-native .cn-inputs span{background:#3b315f!important;color:#ffffff!important}
+html[data-theme="dark"] .callback-native .cn-success{background:#28503d!important;color:#ffffff!important;border-color:#65a083!important}
+html[data-theme="dark"] .callback-native .cn-warning{background:#51401f!important;color:#ffffff!important;border-color:#b08b39!important}
+html[data-theme="dark"] .callback-native .cn-transfer{background:#552d37!important;color:#ffffff!important;border-color:#b76678!important}
+html[data-theme="dark"] .callback-native .cn-arrow{color:#cabdff!important}
+html[data-theme="dark"] .callback-native-figure figcaption{color:#d8d1ee!important}
+</style>
 </head>
 <body>
 <header><div class="wrap"><a class="brand" data-go="home" href="#top">Nimmi Luckhee</a>
