@@ -168,7 +168,43 @@ body.project-focus{overflow:hidden}.focus-back{position:sticky;top:0;z-index:4;m
 :root[data-theme="dark"] .healthcare-case .leadership-highlight{background:#243e35!important;box-shadow:inset 0 0 0 1px #426c5d!important}
 :root[data-theme="dark"] .healthcare-case .tags span{background:#332a57!important;color:#f3efff!important}
 :root[data-theme="dark"] .healthcare-case .scroll{background:#17122a!important;border-color:#4e456d!important}
-</style></head>
+</style>
+<style id="telecom-darkmode-only-fix">
+/* Telecommunications dark-mode contrast only. Existing content, artefacts and layout are unchanged. */
+@media (prefers-color-scheme:dark){
+ :root:not([data-theme="light"]) details.case:first-of-type .flow-card,
+ :root:not([data-theme="light"]) details.case:first-of-type .flow-node,
+ :root:not([data-theme="light"]) details.case:first-of-type .journey-steps li{background:#201a38!important;border-color:#554a78!important;color:#f4f1ff!important}
+ :root:not([data-theme="light"]) details.case:first-of-type .flow-card h5,
+ :root:not([data-theme="light"]) details.case:first-of-type .flow-card b,
+ :root:not([data-theme="light"]) details.case:first-of-type .flow-node{color:#f4f1ff!important}
+ :root:not([data-theme="light"]) details.case:first-of-type .flow-head p,
+ :root:not([data-theme="light"]) details.case:first-of-type .artifact-intro,
+ :root:not([data-theme="light"]) details.case:first-of-type .flow-branches span,
+ :root:not([data-theme="light"]) details.case:first-of-type .journey-steps small{color:#cbc4e8!important}
+ :root:not([data-theme="light"]) details.case:first-of-type .flow-node.start{background:#263a31!important;color:#f0fff6!important;border-color:#5b826e!important}
+ :root:not([data-theme="light"]) details.case:first-of-type .flow-node.decision,
+ :root:not([data-theme="light"]) details.case:first-of-type .prompt-sample{background:#3b331c!important;color:#fff5c7!important;border-color:#8f7933!important}
+ :root:not([data-theme="light"]) details.case:first-of-type .flow-branches>div{background:#29364a!important;color:#f4f7ff!important}
+ :root:not([data-theme="light"]) details.case:first-of-type .flow-outcomes span{background:#29435b!important;color:#f1f8ff!important}
+}
+:root[data-theme="dark"] details.case:first-of-type .flow-card,
+:root[data-theme="dark"] details.case:first-of-type .flow-node,
+:root[data-theme="dark"] details.case:first-of-type .journey-steps li{background:#201a38!important;border-color:#554a78!important;color:#f4f1ff!important}
+:root[data-theme="dark"] details.case:first-of-type .flow-card h5,
+:root[data-theme="dark"] details.case:first-of-type .flow-card b,
+:root[data-theme="dark"] details.case:first-of-type .flow-node{color:#f4f1ff!important}
+:root[data-theme="dark"] details.case:first-of-type .flow-head p,
+:root[data-theme="dark"] details.case:first-of-type .artifact-intro,
+:root[data-theme="dark"] details.case:first-of-type .flow-branches span,
+:root[data-theme="dark"] details.case:first-of-type .journey-steps small{color:#cbc4e8!important}
+:root[data-theme="dark"] details.case:first-of-type .flow-node.start{background:#263a31!important;color:#f0fff6!important;border-color:#5b826e!important}
+:root[data-theme="dark"] details.case:first-of-type .flow-node.decision,
+:root[data-theme="dark"] details.case:first-of-type .prompt-sample{background:#3b331c!important;color:#fff5c7!important;border-color:#8f7933!important}
+:root[data-theme="dark"] details.case:first-of-type .flow-branches>div{background:#29364a!important;color:#f4f7ff!important}
+:root[data-theme="dark"] details.case:first-of-type .flow-outcomes span{background:#29435b!important;color:#f1f8ff!important}
+</style>
+</head>
 <body>
 <header><div class="wrap"><a class="brand" data-go="home" href="#top">Nimmi Luckhee</a>
 <nav aria-label="Main"><a aria-selected="true" data-go="work" data-tab="work" href="#work">Work</a><a aria-controls="about" aria-selected="false" data-go="about" data-tab="about" href="#about" id="about-tab" role="button">About</a><a data-go="skills" href="#skills">Tools</a><a data-go="contact" href="#contact">Contact</a></nav></div></header>
